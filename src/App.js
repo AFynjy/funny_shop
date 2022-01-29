@@ -18,7 +18,7 @@ function App() {
   return (
     <div>
         <Header />
-        <Registration/>
+        {/*<Registration/>*/}
         <Body />
     </div>
   );

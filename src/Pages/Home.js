@@ -1,9 +1,18 @@
 import React from 'react';
+import ShowProducts from "./ShowProducts";
+import logo from "../Components/pinguin.png";
 
 const Home = () => {
-        return (
+    const products = [
+        {name: 'Кофта', price: '5000', img: logo},
+        {name: 'Штаны', price: '3000',img: logo},
+        {name: 'Кроссовки', price: '9000', img: logo},
+        {name: 'Шапка', price: '800', img: logo},
+    ]
+
+    return (
             <div>
-                Hello Home
+                <ShowProducts products = {products}/>
             </div>
         );
 }
